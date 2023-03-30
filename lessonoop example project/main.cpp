@@ -10,13 +10,41 @@ public:
 
 int main() {
 
-	Student st;
-	cout << st.name << endl; 
-	cout << st.surname << endl;
+	Student st1;
+	st1.name = "Ivan";
+	st1.surname = "Ivanov";
+	st1.age = 14;
+	st1.avg_mark = 10;
 
-	cout << st.age << endl;
+	Student st2 = st1;
 
-	cout << st.avg_mark<< endl;
+	cout << "Before" << endl;
+	cout << st1.name << endl;
+	cout << st1.surname << endl;
+	cout << st1.age << endl;
+	cout << st1.avg_mark << endl;
 
+
+	
+	cout << st2.name << endl;
+	cout << st2.surname << endl;
+	cout << st2.age << endl;
+	cout << st2.avg_mark << endl;
+
+	st1.avg_mark = 7;
+
+
+	cout << "\n After" << endl;
+	cout << st1.name << endl;
+	cout << st1.surname << endl;
+	cout << st1.age << endl;
+	cout << st1.avg_mark << endl;
+
+
+
+	cout << st2.name << endl;
+	cout << st2.surname << endl;
+	cout << st2.age << endl;
+	cout << st2.avg_mark << endl;
 	return 0;
 }
