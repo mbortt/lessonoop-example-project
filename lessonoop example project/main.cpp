@@ -7,11 +7,21 @@ public:
 	int age;
 	float avg_mark;
 
+	//constructor with no arguments or default constructor
 	Student() {
 		name = "no name";
 		surname = "no surname";
 		age = 15;
 		avg_mark = 4;
+	}
+
+	//constructor with arguments
+	Student(string nm,string surnm, int a, float avg) {
+		cout << "constructor with arguments" << endl;
+		name = nm;
+		surname = surnm;
+		age = a;
+		avg_mark = avg;
 	}
 
 	~Student() {
@@ -41,23 +51,14 @@ public:
 int main() {
 
 	Student st1;
-	cout << "constructor" << endl;
+	Student st2("Ivan", "Ivanov", 14, 10);
+	cout << st1.convert() << endl;
+	cout << st2.convert() << endl;
 	/*st1.name = "ivan";
 	st1.surname = "ivanov";
 	st1.age = 14;
 	st1.avg_mark = 10;*/
 
-
-
-	cout << "Before" << endl;
-	cout << st1.convert() << endl;
-
-
-	st1.clear();
-
-
-	cout << "\nAfter" << endl;
-	cout << st1.convert() << endl;
 
 
 
