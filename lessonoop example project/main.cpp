@@ -7,6 +7,16 @@ public:
 	int age;
 	float avg_mark;
 
+	Student() {
+		name = "no name";
+		surname = "no surname";
+		age = 15;
+		avg_mark = 4;
+	}
+
+	~Student() {
+		cout << "destructor" << endl;
+	}
 
 	void clear() {
 		name = "no name";
@@ -19,9 +29,9 @@ public:
 	string convert() {
 		string msg = "";
 		msg += name;
-		msg += " "+surname;
-		msg += " ( age= "+ to_string(age);
-		msg += ", avg_mark ="+ to_string(avg_mark)+ ")";
+		msg += " " + surname;
+		msg += " ( age= " + to_string(age);
+		msg += ", avg_mark =" + to_string(avg_mark) + ")";
 		return msg;
 	}
 };
@@ -31,26 +41,27 @@ public:
 int main() {
 
 	Student st1;
-	st1.name = "Ivan";
-	st1.surname = "Ivanov";
+	cout << "constructor" << endl;
+	/*st1.name = "ivan";
+	st1.surname = "ivanov";
 	st1.age = 14;
-	st1.avg_mark = 10;
+	st1.avg_mark = 10;*/
 
-	
+
 
 	cout << "Before" << endl;
 	cout << st1.convert() << endl;
-	
-	
+
+
 	st1.clear();
 
 
 	cout << "\nAfter" << endl;
 	cout << st1.convert() << endl;
-	
 
 
 
-	
+
+
 	return 0;
 }
