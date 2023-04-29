@@ -1,14 +1,12 @@
 #pragma once
-#include "student.h"
+#include "group.h"
 
 class Manager {
 public:
 
-	float calcStudentAvgAge(Student* list, int size);
-
-	float calcStudentAvgMark(Student* list, int size);
-
-     Student findbestStudentAvgAge(Student* list, int size);
-	 Student findworstStudentAvgAge(Student* list, int size);
+	float calcStudentAvgAge(Group group);
+    float calcStudentAvgMark(Group group);
+    Student findbestStudentAvgAge(Group group);
+	Student findworstStudentAvgAge(Group group);
 
 };
