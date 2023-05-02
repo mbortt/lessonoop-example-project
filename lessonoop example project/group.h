@@ -16,4 +16,4 @@ public:
 	int getSize();
 	Student getStudent(int index);
 	string convert();
-}
+};

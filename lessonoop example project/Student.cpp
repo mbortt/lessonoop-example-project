@@ -11,7 +11,7 @@ Student::Student() {
 
 //constructor with arguments
 Student::Student(string nm, string surnm, int a, float avg) {
-	cout << "constructor with arguments" << endl;
+	//cout << "constructor with arguments" << endl;
 	name = nm;
 	surname = surnm;
 	age = a;
@@ -20,7 +20,7 @@ Student::Student(string nm, string surnm, int a, float avg) {
 
 
 Student::Student(string nm, string surnm) {
-	cout << "constructor with arguments" << endl;
+	//cout << "constructor with arguments" << endl;
 	name = nm;
 	surname = surnm;
 	age = 15;
@@ -29,7 +29,7 @@ Student::Student(string nm, string surnm) {
 
 //copy constructr
 Student::Student(const Student& st) {
-	cout << "copy constructur" << endl;
+	//cout << "copy constructur" << endl;
 	name = st.name;
 	surname = st.surname;
 	age = st.age;
@@ -37,7 +37,7 @@ Student::Student(const Student& st) {
 }
 
 Student::~Student() {
-	cout << "destructor" << endl;
+	/*cout << "destructor" << endl;*/
 }
 
 string Student::getName() {
