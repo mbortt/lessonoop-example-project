@@ -22,9 +22,9 @@ int main() {
 
 	cout << "Group average age: " << manager.calcStudentAvgAge(group) << endl;
 	cout << "Group average mark: " << manager.calcStudentAvgMark(group) << endl;
-	Student s = manager.findbestStudentAvgAge(group);
+	Student s = manager.findBestStudent(group);
 	cout << "Best group student is: " << s.convert()<<endl;
-	s = manager.findworstStudentAvgAge(group);
+	s = manager.findWorstStudent(group);
 	cout << "Worst group student is: " << s.convert() << endl;
 
 	return 0;

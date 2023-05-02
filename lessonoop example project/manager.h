@@ -6,7 +6,7 @@ public:
 
 	float calcStudentAvgAge(Group group);
     float calcStudentAvgMark(Group group);
-    Student findbestStudentAvgAge(Group group);
-	Student findworstStudentAvgAge(Group group);
+    Student findBestStudent(Group group);
+	Student findWorstStudent(Group group);
 
 };
