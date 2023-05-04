@@ -18,13 +18,12 @@ int main() {
 	group.add(s4);
 	group.add(s5);
 
-	Manager manager;
 
-	cout << "Group average age: " << manager.calcStudentAvgAge(group) << endl;
-	cout << "Group average mark: " << manager.calcStudentAvgMark(group) << endl;
-	Student s = manager.findBestStudent(group);
+	cout << "Group average age: " << Manager::calcStudentAvgAge(group) << endl;
+	cout << "Group average mark: " << Manager::calcStudentAvgMark(group) << endl;
+	Student s = Manager::findBestStudent(group);
 	cout << "Best group student is: " << s.convert()<<endl;
-	s = manager.findWorstStudent(group);
+	s = Manager::findWorstStudent(group);
 	cout << "Worst group student is: " << s.convert() << endl;
 
 	return 0;
