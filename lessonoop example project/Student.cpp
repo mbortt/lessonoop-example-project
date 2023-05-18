@@ -1,95 +1,41 @@
 #include "student.h"
 
 
-//constructor with no arguments or default constructor
-Student::Student() {
-	name = "no name";
-	surname = "no surname";
-	age = 15;
+
+int Student::count = 0;
+
+int Student::getCount() {
+	return count;
+}
+
+// default constructor
+Student::Student() : Human() {
+	cout << "student default constructor" << endl; 
+	count++;
+	//cout << "default constructor" << endl;
+	
 	avg_mark = 4;
 }
 
-//constructor with arguments
-Student::Student(string nm, string surnm, int a, float avg) {
-	//cout << "constructor with arguments" << endl;
-	name = nm;
-	surname = surnm;
-	age = a;
-	avg_mark = avg;
-}
-
-
-Student::Student(string nm, string surnm) {
-	//cout << "constructor with arguments" << endl;
-	name = nm;
-	surname = surnm;
-	age = 15;
-	avg_mark = 4;
-}
-
-//copy constructr
-Student::Student(const Student& st) {
-	//cout << "copy constructur" << endl;
-	name = st.name;
-	surname = st.surname;
-	age = st.age;
-	avg_mark = st.avg_mark;
+// constructor with arguments
+Student::Student(string nm, string surnm, int a, float mark) : Human(nm, surnm,a)
+{
+	count++;
+	
+	avg_mark = mark;
 }
 
 Student::~Student() {
-	/*cout << "destructor" << endl;*/
+
+	//cout << "destructor" << endl;
 }
 
-string Student::getName() {
-	return name;
-}
-
-void Student::setName(string n) {
-	name = n;
-}
-
-
-string Student::getSurname() {
-	return name;
-}
-
-void Student::setSurname(string n) {
-	surname = n;
-}
-int Student::getAge() {
-	return age;
-}
-
-void Student::setAge(int a) {
-	if (a > 0 && a < 100) {
-		age = a;
-
-	}
-}
-float Student::getAvgmark() {
+float Student::getAvgMark() {
 	return avg_mark;
 }
 
-void Student::setAvgmark(float m) {
-	if (m >= 0 && m <= 10) {
-		avg_mark = m;
+void Student::setAvgMark(float mark) {
+	if (mark >= 0 && mark <= 10) {
+		avg_mark = mark;
 	}
-}
-
-
-void Student::clear() {
-	name = "no name";
-	surname = "no surname";
-	age = 0;
-	avg_mark = 0;
-
-}
-
-string Student::convert() {
-	string msg = "";
-	msg += name;
-	msg += " " + surname;
-	msg += " ( age= " + to_string(age);
-	msg += ", avg_mark =" + to_string(avg_mark) + ")";
-	return msg;
 }

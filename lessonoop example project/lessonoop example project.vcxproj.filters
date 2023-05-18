@@ -18,16 +18,19 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Student.cpp">
+    <ClCompile Include="student.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ьфтфпукюр.cpp">
-      <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="human.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="director.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,6 +45,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="human.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="director.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

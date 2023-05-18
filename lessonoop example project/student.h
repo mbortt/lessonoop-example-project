@@ -1,44 +1,22 @@
 #pragma once
-#include "main.h"
+#include "human.h"
 
-
-class Student {
+class Student : public Human {
 private:
-	string name;
-	string surname;
-	int age;
+	static int count;
+
 	float avg_mark;
 
 public:
-	//constructor with no arguments or default constructor
 	Student();
-
-	//constructor with arguments
-	Student(string nm, string surnm, int a, float avg);
-
-
-	Student(string nm, string surnm);
-
-	//copy constructr
-	Student(const Student& st);
+	Student(string nm, string surnm, int a, float mark);
 	~Student();
 
-	string getName();
 
-	void setName(string n);
+	static int getCount();
 
-
-	string getSurname();
-
-	void setSurname(string n);
-	int getAge();
-
-	void setAge(int a);
-	float getAvgmark();
-
-	void setAvgmark(float m);
+	float getAvgMark();
+	void setAvgMark(float mark);
 
 
-	void clear();
-   string convert();
 };
