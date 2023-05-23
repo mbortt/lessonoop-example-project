@@ -18,7 +18,7 @@ Student::Student() : Human() {
 }
 
 // constructor with arguments
-Student::Student(string nm, string surnm, int a, float mark) : Human(nm, surnm,a)
+Student::Student(string name, string surname, int age, float mark) : Human(name, surname,age)
 {
 	count++;
 	
