@@ -4,14 +4,14 @@
 class Human
 {
 private:
-	static int count;
-
 	string name;
 	string surname;
 	int age;
-	float avg_mark;
 
+	
 public:
+
+	
 	Human();
 	Human(string nm, string surnm, int a);
 
